@@ -10,140 +10,171 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
+   html {
+       color: #222;
+       font-size: 1em;
+       line-height: 1.4;
+   }
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+   /*
+    * Remove text-shadow in selection highlight:
+    * https://twitter.com/miketaylr/status/12228805301
+    *
+    * These selection rule sets have to be separate.
+    * Customize the background color to match your design.
+    */
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+   ::-moz-selection {
+       background: #b3d4fc;
+       text-shadow: none;
+   }
 
-/*
- * A better looking default horizontal rule
- */
+   ::selection {
+       background: #b3d4fc;
+       text-shadow: none;
+   }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
+   /*
+    * A better looking default horizontal rule
+    */
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+   hr {
+       display: block;
+       height: 1px;
+       border: 0;
+       border-top: 1px solid #ccc;
+       margin: 1em 0;
+       padding: 0;
+   }
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
+   /*
+    * Remove the gap between audio, canvas, iframes,
+    * images, videos and the bottom of their containers:
+    * https://github.com/h5bp/html5-boilerplate/issues/440
+    */
 
-/*
- * Remove default fieldset styles.
- */
+   audio,
+   canvas,
+   iframe,
+   img,
+   svg,
+   video {
+       vertical-align: middle;
+   }
 
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
+   /*
+    * Remove default fieldset styles.
+    */
 
-/*
- * Allow only vertical resizing of textareas.
- */
+   fieldset {
+       border: 0;
+       margin: 0;
+       padding: 0;
+   }
 
-textarea {
-    resize: vertical;
-}
+   /*
+    * Allow only vertical resizing of textareas.
+    */
 
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
+   textarea {
+       resize: vertical;
+   }
 
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
+   /* ==========================================================================
+      Browser Upgrade Prompt
+      ========================================================================== */
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+   .browserupgrade {
+       margin: 0.2em 0;
+       background: #ccc;
+       color: #000;
+       padding: 0.2em 0;
+   }
 
+   /* ==========================================================================
+      Author's custom styles
+      ========================================================================== */
 
-html {
-  background-color: #222;
-  height: 100%;
-  width: 100%;
-}
+   /*Large Background Image*/
+   html {
+     background-color: #696969;
+     height: 100%;
+     width: 100%;
+   }
 
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 700;
-  padding: 2em;
-  height: 100%;
-  color #fff;
-}
+   body {
+     font-family: 'Source Sans Pro', sans-serif;
+     padding: 0em 2em;
+     font-size: 1.25em;
+     color: #000;
+     display: flex;
+     justify-content: center;
+   }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
+   .flex-container {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-between;
+     max-width: 1200px;
+   }
 
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-}
+   p span {
+     font-family: 'Montserrat', sans-serif;
+   }
 
-.wrapper span {
-  font-family: 'Lora', sans-serif;
-  font-size: 1.3em;
-}
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+   header,
+   footer {
+     width: 100%;
+     display: flex;
+     justify-content: flex-start;
+   }
+
+   header h1 {
+     font-family: 'Montserrat', sans-serif;
+     font-size: 3em;
+     color: #000;
+   }
+header h1 span {
+  font-family: 'Viaoda Libre', san-serif;
   color: #fff;
+}
+   main {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     border-bottom: 1px solid #fff;
+   }
+
+   main p {
+     font-size: 1.5em;
+   }
+   main p span {
+     color: #fff;
+   }
+
+.flex-items {
+  color: #000;
   line-height: 1.5em;
-  font-size: 1.25em;
-  height: auto;
+  font-size: 1.6em;
+  background-color: #696969;
   display: flex;
-  width: 30%;
   justify-content: center;
   align-items: center;
-}
-.div-2 {
-  border-left: .1em #696969 solid;
-  padding: 1em;
+  border-bottom: 1px solid #fff;
 }
 
-.div-3 {
-  border-left: .1em #696969 solid;
-  padding: 1em;
+footer {
+  border-top: 1px solid #fff;
+}
+footer ul li {
+  list-style-type: none;
+  display: inline;
 }
 
+footer i {
+  padding: 30px 20px 0 0;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -223,9 +254,20 @@ body {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media all and (max-width: 768px) {
+  body {
+    padding: 1em;
+  }
+}
 @media all and (min-width: 1200px) {
-    .div-1, .div-2, .div-3 {
+    .flex-items {
       flex-basis: 30%;
+      border-bottom: none;
+    }
+    #div-2 p {
+      border-left: 1px solid #fff;
+      border-right: 1px solid #fff;
+      padding: 0 40px;
     }
 }
 
